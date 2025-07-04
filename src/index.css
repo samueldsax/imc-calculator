@@ -1,0 +1,42 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Define uma fonte moderna e limpa */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Opcional: Se você quiser que o App.tsx ocupe toda a tela para centralização */
+/* No entanto, o .container do IMCCalculator já faz a centralização de forma robusta */
+/* html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+} */
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que o root ocupe toda a altura */
+}
+
+/* Você pode adicionar variáveis CSS globais aqui se desejar */
+:root {
+  --primary-blue: #007bff;
+  --text-dark: #333;
+  --text-medium: #555;
+  --card-bg: #ffffff;
+  --background-light: #f0f2f5;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --error-red: #dc3545;
+}
